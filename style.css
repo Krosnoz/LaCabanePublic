@@ -1,0 +1,38 @@
+/*
+Theme Name: LaCabane
+Author: Wilfried Petit
+Description: Theme pour La Cabane
+Version: 0.0.1
+Tags: bootstrap, jquery
+*/
+
+.header {
+	background: #377bb5;
+}
+
+#navP li {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+}
+
+#navP li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu-main {
+	padding: 0;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+#menu-main li {
+	transition: all 1s;
+}
+
+#menu-main li:hover {
+	transform: scale(1.1);
+	transition: all 1s;
+}
