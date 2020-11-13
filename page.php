@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="row">
 	<div class="col-sm-12">
 		<?php
@@ -6,6 +7,7 @@
 			get_template_part( 'content', get_post_format() );
 		endwhile; endif;
 		?>
-	</div> <!-- /.col -->
-</div> <!-- /.row -->
+	</div>
+</div>
+
 <?php get_footer(); ?>

@@ -7,4 +7,4 @@
 			<?php wp_get_archives( 'type=monthly' ); ?>
 		</ol>
 	</div>
-</div><!-- /.blog-sidebar -->
+</div>

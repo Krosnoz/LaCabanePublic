@@ -6,33 +6,60 @@ Version: 0.0.1
 Tags: bootstrap, jquery
 */
 
-.header {
-	background: black;
+html,
+body {
+    height: 100%;
+    background-color: rgb(9, 2, 27);
 }
 
-#navP li {
-	position: relative;
-	display: inline-block;
-	padding: 10px;
-	font-weight: 500;
+.indexPage {
+    background: url('images/home.png') no-repeat center center fixed;
+    background-size: 70%;
+    background-position: 50% calc(0% + 50px);
+    background-color: #191F2E;
+    height: 100%;
+    display: flex;
 }
 
-#navP li a {
-	color: #fff;
-	text-decoration: none;
+.monogramme {
+    background-image: url('images/monogramme.png');
 }
 
-#menu-main {
-	padding: 0;
-	font-size: 2rem;
-	margin-top: 1rem;
+.maskIndex {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(24, 28, 36, 0.35) 0%, #181C24 100%);
 }
 
-#menu-main li {
-	transition: all 1s;
+h1,
+p {
+    color: white;
 }
 
-#menu-main li:hover {
-	transform: scale(1.1);
-	transition: all 1s;
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline !important;
+}
+
+#menu-menu-accueil,
+#menu-reseaux-sociaux {
+    display: flex;
+    list-style-type: none;
+}
+
+#menu-menu-accueil li,
+#menu-reseaux-sociaux li {
+    padding-right: 2rem;
+}
+
+.line {
+    background: url('images/line.svg') no-repeat top left;
+    background-size: contain;
 }
