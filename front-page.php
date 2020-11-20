@@ -25,11 +25,11 @@
 
     <main>
       <img class="homeText" src="<?php bloginfo('template_directory') ?>/img/text/francois_piranda.svg"/>
-      <p class="lead"><?php echo get_bloginfo('description'); ?></p>
+      <p class="lead"><?php echo get_bloginfo('description'); ?>dd</p>
     </main>
 
     <footer>
-    
+      <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
     </footer>
 
   </div>
