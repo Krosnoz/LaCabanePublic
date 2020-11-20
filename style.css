@@ -586,11 +586,23 @@ h3 {
   z-index: -1;
 }
 
+.footerSecond #menu-reseaux-sociaux-2 {
+  list-style: none
+}
+
+.footerSecond #menu-reseaux-sociaux-2 li i {
+  padding-right: 16px;
+}
+
 .imageThematic .bgThematic {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #005570;
+}
+
+.imageThematic span {
+  text-align: left;
 }
 
 .imageThematic img {
@@ -608,6 +620,10 @@ h3 {
   text-transform: uppercase;
   position: absolute;
   bottom: -30%;
+}
+
+.informationsThematic {
+  padding: 0 50px;
 }
 
 .informationsThematic p {
@@ -742,11 +758,11 @@ h3 {
 
 .rightContact {
   background-color: #005570;
-  width: 45%;
+  width: 50%;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .flex-column {
