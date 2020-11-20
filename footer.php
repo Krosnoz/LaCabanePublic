@@ -12,7 +12,7 @@
 			<?php the_field('informations_footer'); ?>
 		</div>
 		<div class="newsletterFooter">
-			<i class="far fa-calendar-check"></i>
+			<i class="far fa-calendar-chec"></i>
 			<h4>NEWSLETTER</h4>
 			<p>Pour rester au courant de mes projets !</p>
 			<?php echo do_shortcode('[sibwp_form id=2]'); ?>
