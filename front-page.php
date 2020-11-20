@@ -1,44 +1,40 @@
-<!-- Permet d'afficher la homepage, car front-page.php est pris avant index.php, c'est comme une page perso -->
-
 <!DOCTYPE html>
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Cabane</title>
-    <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <?php wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
 
-<body class="indexPage">
-    <div class="maskIndex">
-        <div class="line"></div>
-        <div class="d-flex h-100 p-3 flex-column">
+<body <?php body_class(); ?>>
 
-            <header class="mb-auto d-flex justify-content-between">
-                <img class="pl-5 pt-5" src="<?php bloginfo('template_directory') ?>/images/monogramme.png'" alt="Monogramme" />
-                <nav class="pr-5 pt-5 nav nav-masthead">
-                    <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
-                    <!-- Permet de récuperer un widget menu, déclarer dans functions.php -->
-                </nav>
-            </header>
+  <!-- Pour Yoast qui va placer le Google Tag Manager -->
+  <?php wp_body_open(); ?>
 
-            <main class="text-center">
-                <h1><?php echo get_bloginfo('name'); ?></h1>
-                <p class="lead"><?php echo get_bloginfo('description'); ?></p>
-            </main>
+  <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
 
-            <footer class="mt-auto">
-                <nav class="nav justify-content-center pb-5">
-                    <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
-                </nav>
-            </footer>
-        </div>
+  <div class="maskHome">
+    <header>
+      <!-- Animation Logo -->
+      <img src="<?php bloginfo('template_directory') ?>/img/monogramme.png'" alt="Monogramme" />
+      <!-- Permet de récuperer un widget menu, déclarer dans functions.php -->
+      <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
+    </header>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <?php wp_footer(); ?>
+    <main>
+      <img class="homeText" src="<?php bloginfo('template_directory') ?>/img/text/francois_piranda.svg"/>
+      <p class="lead"><?php echo get_bloginfo('description'); ?></p>
+    </main>
+
+    <footer>
+      <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
+    </footer>
+
+  </div>
+
+  <?php wp_footer(); ?>
 </body>
 
 </html>
