@@ -6,8 +6,8 @@
     <?php if( have_rows('thematique') ): $counter = 1; ?>
       <?php while( have_rows('thematique') ): the_row(); ?>
         <?php if($counter % 2 == 0): ?>
-          <div class="oneThematic">
-            <div class="informationsThematic right">
+          <div class="oneThematic right">
+            <div class="informationsThematic">
               <h2><?php the_sub_field('titre_thematique'); ?></h2>
               <p><?php the_sub_field('description_thematique');?></p>
               <a href="<?php the_sub_field('lien_thematique');?>">Découvrir les œuvres</a>
@@ -23,7 +23,7 @@
           </div>
         </div>
       <?php else : ?>
-        <div class="oneThematic">
+        <div class="oneThematic left">
           <div class="imageThematic">
             <div class="bgThematic"></div>
             <?php
@@ -33,7 +33,7 @@
           <?php endif; ?>
           <span class="keyThematic"><?php the_sub_field('mot_cle_thematique'); ?></span>
         </div>
-        <div class="informationsThematic left">
+        <div class="informationsThematic">
           <h2><?php the_sub_field('titre_thematique'); ?></h2>
           <p><?php the_sub_field('description_thematique');?></p>
           <a href="<?php the_sub_field('lien_thematique');?>">Découvrir les œuvres</a>

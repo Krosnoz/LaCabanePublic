@@ -32,6 +32,8 @@
 				<span></span>
 			</span>
 
+			<?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
+			
 			<nav class="mobileMenu">
 				<?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
 			</nav>

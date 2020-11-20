@@ -1,6 +1,10 @@
 $(function(){
   $(document).ready(function() {
 
+    $('#preloader').fadeOut(3500, function() {
+      $(this).remove();
+    });
+
     $(".mobileHeader").on('click', function() {
       $(this).toggleClass("open");
       $(".mobileMenu").toggleClass("open");

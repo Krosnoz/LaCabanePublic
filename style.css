@@ -8,6 +8,17 @@ Tags: bootstrap, jquery
 
 /* Start Global Tags */
 
+div#preloader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #333 url('http://localhost/wordpress/wp-content/themes/LaCabanePublic/img/Loader.gif') no-repeat center center;
+}
+
 html,
 body {
   font-family: 'Roboto';
@@ -572,6 +583,7 @@ h3 {
   position: relative;
   width: 312px;
   height: 200px;
+  z-index: -1;
 }
 
 .imageThematic .bgThematic {
@@ -777,6 +789,7 @@ h3 {
   #menu-menu-accueil {
     flex-direction: column;
     padding: 0;
+    margin-bottom: 10px;
   }
 
   #menu-menu-accueil li {
@@ -786,6 +799,21 @@ h3 {
 
   .home header {
     padding: 0 2rem;
+  }
+
+  .home header img {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home footer {
+    padding-top: 0;
+    align-items: baseline;
+    height: 300px;
+    flex-basis: auto;
   }
   /* End Home */
 
@@ -809,6 +837,11 @@ h3 {
 
   .menu-reseaux-sociaux-container ul {
     padding: 0;
+  }
+
+  .mobile .menu-reseaux-sociaux-container {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .mobile {
@@ -934,10 +967,17 @@ h3 {
     padding-top: 30px;
   }
 
-  footer .footerMain {
+  .page-template-default footer .footerMain {
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 80%;
   }
+
+  .sib_signup_box_inside_2 {
+    display: flex;
+  }
+
+  .RSFooter p { font-size: 12px; }
 
   .inputEmail {
     width: 100%;
@@ -957,10 +997,26 @@ h3 {
 
   .breakLine {
     width: 85%;
+    margin-bottom: 30px;
   }
 
   .RSFooter {
     padding-top: 1rem;
+    position: relative;
+  }
+
+  .RSFooter #menu-reseaux-sociaux-2 {
+    display: flex;
+    list-style: none;
+  }
+
+  .RSFooter .menu-reseaux-sociaux-container {
+    left: 15%;
+    top: -45%;
+  }
+
+  .RSFooter #menu-reseaux-sociaux-2 li, .RSFooter #menu-reseaux-sociaux-2 li i {
+    padding-right: 10px;
   }
 
   /* End Header Mobile */
@@ -976,6 +1032,132 @@ h3 {
     width: 100%;
   }
 
+  .meContainer {
+    flex-direction: column;
+  }
+
+  .meContainer img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .meInformation {
+    text-align: center;
+    padding: 1rem;
+    margin-left: 0;
+  }
+
+  .parcours {
+    flex-direction: column;
+  }
+
+  .blockContact {
+    height: 100px;
+  }
   /* End About Me */
+
+  /* Start Inspirations */
+
+  .lastArtists {
+    margin: 0 2rem;
+  }
+
+  .thanksArtists {
+    width: 100%;
+  }
+
+  .containerArtist {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .oneArtist {
+    width: 100%;
+    padding-bottom: 15px;
+    z-index: -1;
+  }
+
+  .specialText p, .specialTextImage {
+    width: 100%;
+    padding: 80px 0;
+  }
+
+  .specialTextImage img {
+    width: 100%;
+  }
+
+  /* End Inspirations */
+
+  /* Start Oeuvres */
+
+  .oneThematic {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .left, .right {
+    padding: 0;
+    margin-top : 80px;
+  }
+
+  .informationsThematic {
+    padding-top: 80px;
+  }
+
+  .informationsThematic a {
+    padding: 16px 14px;
+  }
+
+  .right {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  /* End Oeuvres */
+
+  /* Start Contact */
+
+  .bgContact {
+    flex-direction: column;
+    width: 85%;
+    margin: 20px 0;
+    height: 100%;
+  }
+
+  .leftContact {
+    margin: 16px;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .leftContact h1 {
+    font-size: 32px;
+    padding-tom: 0;
+  }
+
+  .rsContact {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0;
+    height: 360px;
+  }
+
+  .rightContact {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .flex-column, .rightContact p {
+    width: 65% !important;
+  }
+
+  .rightContact p {
+    text-align: center;
+    font-size: 12px;
+  }
+  /* End Contact */
+
   /*End PageInside */
 }

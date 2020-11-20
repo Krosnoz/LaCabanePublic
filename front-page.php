@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+  <div id="preloader"></div>
   <!-- Pour Yoast qui va placer le Google Tag Manager -->
   <?php wp_body_open(); ?>
 
