@@ -25,7 +25,7 @@
 
     <main>
       <img class="homeText" src="<?php bloginfo('template_directory') ?>/img/text/francois_piranda.svg"/>
-      <p class="lead"><?php echo get_bloginfo('description'); ?>s</p>
+      <p class="lead"><?php echo get_bloginfo('description'); ?></p>
     </main>
 
     <footer>
