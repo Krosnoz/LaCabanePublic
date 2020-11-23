@@ -5,6 +5,7 @@
     <?php if( have_rows('une_oeuvre') ): ?>
       <?php while( have_rows('une_oeuvre') ): the_row(); ?>
         <?php $image = get_sub_field('image_oeuvre'); if( !empty( $image ) ): ?>
+
           <div class="oneItem glightbox" data-glightbox="description: .custom-desc">
             <div class="oneImage">
               <span class="oneText"><?php the_sub_field('nom_oeuvre'); ?></span>
@@ -17,6 +18,7 @@
               <span class="custom-price"><?php the_sub_field('prix_oeuvre'); ?> €</span>
             </div>
           </div>
+
         <?php endif; ?>
       <?php endwhile; ?>
     <?php endif; ?>
