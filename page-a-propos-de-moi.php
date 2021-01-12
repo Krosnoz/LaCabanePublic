@@ -50,7 +50,7 @@
     </div>
 
     <div class="blockContact">
-      <p>Envie de suivre mes actualités ? <span><a href="http://localhost/wordpress/contact/">Contactez-moi  !</a></span></p>
+      <p>Envie de suivre mes actualités ? <span><a href="#newsletter">Newsletter</a></span></p>
     </div>
   </main>
 
